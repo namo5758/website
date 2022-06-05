@@ -31,7 +31,7 @@ router.post('/store/1', async (request, response) => {
     if(item1 === undefined){
         response.redirect('/store/1?error=กรุณาเลือกสินค้า');
     } else {
-        await db.from('mybot.store').insert({num: number, ad: addres, i1: item1, username: user});
+        await db.from('yourdatabase').insert({num: number, ad: addres, i1: item1, username: user});
         response.redirect('/store?error=สำเร็จ');
     }
 });
