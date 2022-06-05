@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head customTitle="Login | " }}
+</head>
+<body>
+    {{> header}}
+        <p>{{ this.error }}</p>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <button>login</button>
+            <p>ถ้าหากไม่มีaccount<a href="/register"> สร้างเลย </a>สิ!!</p>
+        </form>
+    {{> footer}}
+</body>
+</html>

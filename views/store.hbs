@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head customTitle="Store | " }}
+<body>
+    {{> admin }}
+        <p>{{ this.error }}</p>
+        <div>
+            <p>รหัสสินค้า: 1</p>
+            <p>ชื่อสินค้า: ตัวอย่าง</p>
+            <p>ราคา: 100</p>
+            <button><a href="/store/1">ซื้อสินค้า</a></button>
+        </div>
+    {{> footer }}
+</body>
+</html>

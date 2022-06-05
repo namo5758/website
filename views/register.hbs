@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{> head customTitle="Register | "}}
+</head>
+<body>
+    {{> header }}
+        <p>{{ this.error }}</p>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Username" id="username" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <button>สร้างบัญชี</button>
+            <p>กลับไปที่หน้า<a href="/login"> log in </a></p>
+        </form>
+    {{> footer }}
+</body>
+</html>

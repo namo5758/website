@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head customTitle="Admin Login | " }}
+</head>
+<body>
+    {{> header}}
+    <form action="/adminlogin" method="post">
+        <input type="text" name="username" placeholder="Username" id="username" required>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        <button>login</button>
+    </form>
+    {{> footer}}
+</body>
+</html>

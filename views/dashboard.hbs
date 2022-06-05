@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head customTitle="Admin Login | " }}
+</head>
+<body>
+    {{> admin }}
+    {{#each item}}
+        <p>ที่อยู่:{{ this.ad }}</p>
+        <p>เบอร์โทร:{{ this.num }}</p>
+        <p>รหัสของที่สั่ง:{{ this.i1 }}</p>
+        <p>ชื่อผู้ใช้:{{ this.username }}</p><br>
+    {{/each}}
+    {{> footer}}
+</body>
+</html>
