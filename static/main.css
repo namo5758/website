@@ -1,0 +1,48 @@
+/* architects-daughter-regular - latin */
+@font-face {
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/architects-daughter-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/architects-daughter-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/architects-daughter-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/architects-daughter-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/architects-daughter-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter') format('svg'); /* Legacy iOS */
+  }
+html {
+    font-family: 'architects-daughter-regular', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+.menu-bar {
+    background-color: #1988f7;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .item {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 20px;
+  }
+  
+  .item.title {
+    font-weight: 600;
+  }
+  
+  .item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .footer {
+      background-color: #1988f7;
+      text-align: center;
+      border-top: 1px solid #fff;
+  }
