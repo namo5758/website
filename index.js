@@ -15,7 +15,7 @@ const port = process.env.APP_PORT;
 const session = require("express-session");
 //เกี่ยวกับ cookie
 app.use(session({
-	secret: 'namo5758',
+	secret: 'secret',
 	resave: true,
 	saveUninitialized: true
 }));
