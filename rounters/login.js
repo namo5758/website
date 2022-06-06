@@ -16,7 +16,7 @@ router.post('/login', async (request, response) => {
         response.send("ไม่พบชื่อผู้ใช้นี้");
     } else {
         if(checkpass === undefined){
-            response.send("รหัสผิด" + "<a href='/login'>กลับไปหน้า login</a>");
+            response.redirect("/login?error=รหัสผิด")
         } else {
             request.session.loggedin = true;
             request.session.username = request.body.username;
